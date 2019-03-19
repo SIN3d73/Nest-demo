@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "login": "email",
+    "email": "email@email.com",
+    "active": true
+  },
+  {
+    "id": 2,
+    "login": "test",
+    "email": "test@test.com",
+    "active": true
+  },
+  {
+    "id": 3,
+    "login": "hello",
+    "email": "hello@hello.com",
+    "active": true
+  },
+  {
+    "id": 4,
+    "login": "world",
+    "email": "world@world.com",
+    "active": true
+  }
+]
