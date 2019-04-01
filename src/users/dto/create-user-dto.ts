@@ -1,14 +1,24 @@
-import { ApiModelProperty } from '@nestjs/swagger';
-import { IsAlphanumeric, IsEmail, IsInt, IsNotEmpty } from 'class-validator';
+import {ApiModelProperty} from '@nestjs/swagger';
+import {IsAlphanumeric, IsNotEmpty, IsNumber} from 'class-validator';
 
 export class CreateUserDto {
     @IsNotEmpty()
-    @IsEmail()
+    @IsAlphanumeric()
     @ApiModelProperty()
-    email: string;
+    name: string;
 
     @IsNotEmpty()
     @IsAlphanumeric()
     @ApiModelProperty()
-    login: string;
+    address: string;
+
+    @IsNotEmpty()
+    @IsNumber()
+    @ApiModelProperty()
+    workProgress: number;
+
+    @IsNotEmpty()
+    @IsAlphanumeric()
+    @ApiModelProperty()
+    task: string;
 }

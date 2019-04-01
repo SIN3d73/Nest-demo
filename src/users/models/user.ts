@@ -1,7 +1,10 @@
 
 export class User {
     id: number;
-    login: string;
-    email: string;
-    active: boolean;
+    name: string;
+    address: string;
+    workProgress: number;
+    task: string;
+    isActive: boolean;
+    isNew: boolean;
 }

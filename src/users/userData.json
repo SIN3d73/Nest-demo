@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
-    "login": "email",
-    "email": "email@email.com",
-    "active": true
+    "name": "Joel Reed",
+    "address": "817 Poling Farm Road",
+    "workProgress": 50,
+    "task": "Create table layout",
+    "isActive": true,
+    "isNew": false
   },
   {
     "id": 2,
-    "login": "test",
-    "email": "test@test.com",
-    "active": true
+    "name": "Rowan Boyle",
+    "address": "3559 McKinley Avenue",
+    "workProgress": 12.5,
+    "task": "Update model",
+    "isActive": true,
+    "isNew": false
   },
   {
     "id": 3,
-    "login": "hello",
-    "email": "hello@hello.com",
-    "active": true
+    "name": "Felix Mendez",
+    "address": "2906 Archwood Avenue",
+    "workProgress": 25,
+    "task": "Connect maps",
+    "isActive": true,
+    "isNew": true
   },
   {
     "id": 4,
-    "login": "world",
-    "email": "world@world.com",
-    "active": true
+    "name": "James S Harris",
+    "address": "3315  Arthur Avenue",
+    "workProgress": 85,
+    "task": "Add interceptor",
+    "isActive": true,
+    "isNew": false
   }
 ]
