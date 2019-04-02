@@ -1,5 +1,5 @@
 import {ApiModelProperty} from '@nestjs/swagger';
-import {IsAlphanumeric, IsInt, IsNotEmpty, IsNumber} from 'class-validator';
+import {IsInt, IsNotEmpty, IsNumber} from 'class-validator';
 
 export class UpdateUserDto {
     @IsNotEmpty()
@@ -8,12 +8,10 @@ export class UpdateUserDto {
     id: number;
 
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     name: string;
 
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     address: string;
 
@@ -23,7 +21,6 @@ export class UpdateUserDto {
     workProgress: number;
 
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     task: string;
 

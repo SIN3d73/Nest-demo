@@ -1,14 +1,12 @@
 import {ApiModelProperty} from '@nestjs/swagger';
-import {IsAlphanumeric, IsNotEmpty, IsNumber} from 'class-validator';
+import {IsNotEmpty, IsNumber} from 'class-validator';
 
 export class CreateUserDto {
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     name: string;
 
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     address: string;
 
@@ -18,7 +16,6 @@ export class CreateUserDto {
     workProgress: number;
 
     @IsNotEmpty()
-    @IsAlphanumeric()
     @ApiModelProperty()
     task: string;
 }
